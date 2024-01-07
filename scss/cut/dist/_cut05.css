@@ -1,0 +1,62 @@
+.cut5 .title {
+  width: 50%;
+}
+.cut5 .title p {
+  line-height: 1.4;
+  letter-spacing: 0.3vw;
+}
+.cut5 .title p:nth-child(1) {
+  font-size: 3.5vw;
+}
+.cut5 .title p:nth-child(1) span {
+  vertical-align: -3%;
+  font-size: 6.5vw;
+  font-style: italic;
+}
+.cut5 .title p:nth-child(2) {
+  display: inline-block;
+  border: 1px solid #cc0000;
+  border-width: 1px 0 1px 0;
+  padding: 1.3vw 0;
+  font-size: 2.2vw;
+  margin-bottom: 1.3vw;
+}
+.cut5 .info {
+  position: relative;
+  margin-top: 6vw;
+}
+.cut5 .info .pds::after {
+  content: "";
+  position: absolute;
+  background-image: url(/images/pdandFrame.png);
+  background-size: cover;
+  transform: translate(4.5vw, -23.5vw);
+  width: 65.5vw;
+  height: 50vw;
+  z-index: -1;
+}
+.cut5 .info .t-l {
+  display: inline-block;
+  transform: translate(6.5vw, 15.6vw);
+}
+.cut5 .info .t-r {
+  display: inline-block;
+  transform: translate(34.5vw, 12vw);
+}
+.cut5 .info .txt p {
+  letter-spacing: 0.3vw;
+}
+.cut5 .info .txt p:nth-child(1) {
+  padding-left: 1vw;
+  font-size: 1.5vw;
+  margin-bottom: 1vw;
+  color: #ffffff;
+}
+.cut5 .info .txt p:nth-child(2) {
+  font-size: 1.5vw;
+  margin-bottom: 0.5vw;
+}
+.cut5 .info .txt p:nth-child(3) {
+  color: #a40000;
+  font-size: 2vw;
+}

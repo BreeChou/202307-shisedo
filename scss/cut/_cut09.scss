@@ -1,0 +1,422 @@
+.cut9 {
+  background-image: url(../images/index_bgjpg_09.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 72vw;
+  padding-top: 4vw;
+  background-color: $red;
+  @include mb {
+    background-image: url(../images/index_mbv1_10.jpg);
+    height: 153vw;
+  }
+  ul {
+    @include mb {
+      flex-direction: column;
+    }
+    .left {
+      position: relative;
+      width: 39.2vw;
+      .txt {
+        position: absolute;
+        left: 6vw;
+        top: 32.5vw;
+        z-index: 1;
+        text-align: center;
+        @include mb {
+          width: 74vw;
+          left: 6vw;
+          top: 72.5vw;
+        }
+        p:first-child {
+          color: $red;
+          transform: skewX(-10deg);
+          font-size: 3vw;
+          @include mb {
+            
+            letter-spacing: .3vw;
+            margin-top: 3vw;
+            font-size: 6vw;
+            font-weight: 500;
+          }
+          span {
+            vertical-align: -6%;
+            font-size: 4.5vw;
+            @include mb {
+              font-size: 8vw;
+            }
+          }
+        }
+        p:last-child {
+          color: #ffffff;
+          text-align: center;
+          font-size: 1.6vw;
+          padding: 0.6vw 0vw; 
+          background: $gradient-red;
+          @include mb {
+            text-align: center;
+            font-size: 3.5vw;
+            letter-spacing: .3vw;
+            padding: 1.6vw 0vw;
+          }
+        }
+      }
+      .deco-flare-4 {
+        width: 1.5vw;
+        height: 13vw;
+        filter: blur(0.2vw);
+        top: 12.7vw;
+        left: 25.5vw;
+        z-index: 1;
+        position: absolute;
+        @include mb {
+          width: 4.5vw;
+          height: 29vw;
+          top: 30vw;
+          left: 57.7vw;
+        }
+        &::before{
+          content: "";
+          width: 100%;
+          height: 100%;
+          display: block;
+          background: radial-gradient(ellipse, #fff, rgba(255, 255, 255, 0) 80%);
+          animation: deco_flare_shine 1s infinite alternate;
+          animation-delay: .5s;
+        }
+        @keyframes deco_flare_shine {
+          0% {
+            opacity: 0.5;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+      .deco-flare-3 {
+        width: 1.5vw;
+        height: 13vw;
+        filter: blur(0.2vw);
+        top: 19.7vw;
+        left: 18.5vw;
+        z-index: 1;
+        position: absolute;
+        @include mb {
+          width: 4.5vw;
+          height: 29vw;
+          top: 44vw;
+          left: 41.7vw;
+        }
+        &::before{
+          content: "";
+          width: 100%;
+          height: 100%;
+          display: block;
+          background: radial-gradient(ellipse, #fff, rgba(255, 255, 255, 0) 80%);
+          animation: deco_flare_shine 1s infinite alternate;
+          animation-delay: .5s;
+        }
+        @keyframes deco_flare_shine {
+          0% {
+            opacity: 0.5;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+      .deco-flare-2 {
+        width: 1.5vw;
+        height: 24vw;
+        filter: blur(0.2vw);
+        top: 5.7vw;
+        left: 8.5vw;
+        z-index: 1;
+        position: absolute;
+        @include mb {
+          width: 3.5vw;
+          height: 47vw;
+          top: 24vw;
+          left: 20.7vw;
+        }
+        &::before{
+          content: "";
+          width: 100%;
+          height: 100%;
+          display: block;
+          background: radial-gradient(ellipse, #fff, rgba(255, 255, 255, 0) 80%);
+          animation: deco_flare_shine 1s infinite alternate;
+          animation-delay: .5s;
+        }
+        @keyframes deco_flare_shine {
+          0% {
+            opacity: 0.5;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+      .deco-star-2 {
+        top: 46.5%;
+        left: 19.5%;
+        width: 5vw;
+        height: 5vw;
+        z-index: 1;
+        position: absolute;
+        @include mb {
+          width: 10vw;
+          height: 10vw;
+          top: 66.7vw;
+          left: 16.7vw;
+        }
+        &::before{
+          content: "";
+          width: 100%;
+          height: 100%;
+          display: block;
+          background-image: url(../images/icon-light-1.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          animation: deco_light 2s linear infinite;
+        }
+        @keyframes deco_light {
+          0% {
+            transform: rotate(0deg) scale(0);
+          }
+          50% {
+            transform: rotate(180deg) scale(1.2);
+          }
+          100% {
+            transform: rotate(360deg) scale(0);
+          }
+        }
+      }
+      .deco-star-1 {
+        top: 18.5%;
+        left: 60.5%;
+        width: 5vw;
+        height: 5vw;
+        z-index: 1;
+        position: absolute;
+        @include mb {
+          width: 6vw;
+          height: 6vw;
+          top: 55.7vw;
+          left: 56.7vw;
+        }
+        &::before{
+          content: "";
+          width: 100%;
+          height: 100%;
+          display: block;
+          background-image: url(../images/icon-light-1.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          animation: deco_light 2s linear infinite;
+          animation-delay: .5s;
+        }
+        @keyframes deco_light {
+          0% {
+            transform: rotate(0deg) scale(0);
+          }
+          50% {
+            transform: rotate(180deg) scale(1.2);
+          }
+          100% {
+            transform: rotate(360deg) scale(0);
+          }
+        }
+      }
+      .deco-star-0 {
+        top: -8.5%;
+        left: 36.5%;
+        width: 7vw;
+        height: 7vw;
+        z-index: 1;
+        position: absolute;
+        @include mb {
+          width: 12vw;
+          height: 12vw;
+          top: -6.3vw;
+          left: 35.7vw;
+        }
+        &::before{
+          content: "";
+          width: 100%;
+          height: 100%;
+          display: block;
+          background-image: url(../images/icon-light-1.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+        
+        }
+        @keyframes deco_light {
+          0% {
+            transform: rotate(0deg) scale(0);
+          }
+          50% {
+            transform: rotate(180deg) scale(1.2);
+          }
+          100% {
+            transform: rotate(360deg) scale(0);
+          }
+        }
+      }
+      .pd-9 {
+        position: relative;
+        width: 31vw;
+        left: 3vw;
+        top: 33vw;
+        @include mb {
+          width: 74vw;
+          top: 73vw;
+        }
+        &::after {
+          content: "";
+          width: 41vw;
+          height: 56vw;
+          top: -35vw;
+          left: -4vw;
+          position: absolute;
+          background-image: url(../images/pd-9.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          @include mb {
+            width: 85vw;
+            height: 126vw;
+            top: -76vw;
+          }
+        }
+      }
+      .notion {
+        width: 50vw;
+        // left: -6vw;
+        top: 53vw;
+        line-height: 1.5;
+        letter-spacing: .14vw;
+        position: absolute;
+        // transform: scale(.75);
+        @include mb {
+          width: 86vw;
+          left: 0vw;
+          top: 124vw;
+        }
+      }
+      @include mb {
+        margin-bottom: 150vw;
+      }
+    }
+    .right {
+      margin-left: 2vw;
+      color: #ffffff;
+      width: 33vw;
+      @include mb {
+        margin-top: -5vw;
+        width: 100%;
+        margin-left: 0vw;
+      }
+      h2 {
+        position: relative;
+        text-align: center;
+        font-size: 3.5vw;
+        letter-spacing: .3vw;
+        color: transparent;
+        background: $gradient-gold;
+        background-clip: text;
+        @include mb {
+          font-size: 8.5vw;
+          
+        }
+        &::before {
+          content: ''; 
+          position: absolute;
+          top: 3vw;
+          left: -1vw;
+          background-image: url(../images/line-9.png);
+          background-size: 100%;
+          width: 8vw;
+          height: 2px;
+          @include mb {
+            top: 9vw;
+            left: -1vw;
+            width: 23vw;
+            height: 2px;
+          }
+
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          top: 3vw;
+          left: 25vw;
+          transform: rotate(180deg);
+          background-image: url(../images/line-9.png);
+          background-size: 100%;
+          width: 8vw;
+          height: 2px;
+          @include mb {
+            top: 9vw;
+            left: 60vw;
+            width: 23vw;
+            height: 2px;
+          }
+        }
+      }
+      .sub {
+        letter-spacing: .2vw;
+        text-align: center;
+        font-size: 2vw;
+        @include mb {
+          font-size: 4vw;
+        }
+        span {
+          display: inline-block;
+          transform: skewX(-10deg);
+          font-size: 3vw;
+          @include mb {
+            font-size: 6vw;
+          }
+        }
+      }
+      .intro {
+        letter-spacing: .05vw;
+        margin: 1vw 0;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 1vw;
+        @include mb {
+          margin: 3vw 0;
+          font-size: 3vw;
+        }
+      }
+      .form {
+        background: #000;
+        height: 32vw;
+        width: 100%;
+        @include mb {
+          height: 79vw;
+        }
+      }
+      .note {
+        // width: 56vw;
+        position: relative;
+        font-size: 0.7vw;
+        line-height: 2;
+        letter-spacing: 0.1vw;
+        text-align: left;
+        margin: 1vw auto;
+        @include mb {
+          width: 95%;
+          margin: 2vw auto;
+          // font-size: 3vw;
+          font-size: 2vw;
+          line-height: 1.5;
+          letter-spacing: 0.1vw;
+          text-align: left;
+          
+          
+        }
+      }
+    }  
+  }
+}

@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "shiseido_ginza";
+  src: url("../font/shiseidoginza-medium-webfont.woff2") format("woff2"), url("../font/shiseidoginza-medium-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  overflow-x: hidden;
+  background-image: url(/images/index_bg2.jpg);
+  background-image: url(/images/index.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 606vw;
+  font-family: "shiseido_ginza", "woff2", "woff";
+}
+@media (max-width: 900px) {
+  body {
+    background-image: url(/images/index_mb_bg.jpg);
+  }
+}
+
+.df {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 3.5vw;
+}
+@media (max-width: 900px) {
+  h2 {
+    font-size: 7vw;
+  }
+}
+
+.notice {
+  font-size: 0.7vw;
+  letter-spacing: 0.1vw;
+  color: #ffffff;
+  margin-top: 2vw;
+  padding-left: 1vw;
+  transform: scale(50%);
+  width: 55vw;
+  text-align: right;
+  margin-left: auto;
+}
+@media (max-width: 900px) {
+  .notice {
+    margin: 0 auto;
+    transform: scale(90%);
+    text-align: center;
+    margin-top: 5vw;
+  }
+}
+
+.wrap {
+  max-width: 75vw;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .wrap {
+    max-width: 90vw;
+  }
+}

@@ -1,0 +1,45 @@
+
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+$gradient-gold: linear-gradient(45deg, 
+    rgba(#fff4dc, 1),
+    rgba(#e3c58d, 1),
+    rgba(#fff4dc, 1),
+    rgba(#e3c58d, 1)    
+);
+
+$gradient-white: linear-gradient(
+    to right,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,1) 10%,
+    rgba(255,255,255,1) 50%,
+    rgba(255,255,255,1) 90%,
+    rgba(255,255,255,0) 100%
+);
+
+
+$gradient-red:  linear-gradient(
+    to right,
+    rgba(133,14,25,0) 0%,
+    rgba(143,2,34,1) 10%,
+    rgba(133,14,25,1) 50%,
+    rgba(133,14,25,1) 90%,
+    rgba(133,14,25,0) 100%
+); 
+
+$gradient-TR: linear-gradient(45deg, 
+rgba(#b10206,1),
+rgba(rgb(232, 48, 79),1),
+rgba(#b10206,1),
+rgba(#d23a3d,1)    
+);
+
+$red-filter:  linear-gradient(
+    to left, 
+    rgba(169,3,41,0) 0%,
+    rgba(169,3,40,0) 1%,
+    rgba(177,2,7,0.51) 52%
+    ,rgba(177,2,6,0.52) 53%,
+    rgba(177,2,6,1) 100%
+); 
+
+$red: #b10206 ;

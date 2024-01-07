@@ -1,0 +1,268 @@
+.cut4 {
+  background-image: url(../images/index_bgjpg_04.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 56vw;
+  // opacity: .8;
+  padding-top: 6vw;
+  @include mb {
+    padding-top: 5vw;
+    background-image: url(../images/index_mbv1_04.jpg);
+    height: 150vw;
+  }
+  h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 3.5vw;
+    width: 75vw;
+    letter-spacing: .4vw;
+    @include mb {
+      font-size: 5vw;
+    }
+  }
+  .mb-h2 {
+    display: none;
+    line-height: 8vw;
+    span {
+      font-size: 4vw;
+      margin-top: 1vw;
+      display: block;
+    }
+    @include mb {
+      padding-left: 7vw;
+      font-size: 7vw;
+      display: block;
+      span {
+        transform: scale(1.45);
+      }
+    }
+  }
+  .pc-h2 {
+    @include mb {
+      display: none;
+    }
+  }
+  .p-1 {
+    text-align:justify;
+    margin-top: 4vw;
+    font-size: 1vw;
+    line-height: 2;
+    font-weight: 200;
+    padding-left: 1vw;
+    letter-spacing: .13vw;
+    color: #ffffff;
+    width: 36vw;
+    height: 10vw;
+    @include mb {
+      width: 107%;
+      margin-top: 1vw;
+      margin-left: -3.5%;
+      font-size: 3vw;
+      height: 31vw;
+      line-height: 1.8;
+    }
+  }
+  .info {
+    width: 100%;
+    // background: #000;
+    margin-top: 8vw;
+    position: relative;
+    @include mb {
+      margin-top: 60vw;
+    }
+    .txt-l {
+      position: absolute;
+      width: 24vw;
+      top: 1vw;
+      z-index: 1;
+      @include mb {
+        width: 61vw;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/LLLframe.png);
+        transform: translate(-3vw , -9.7vw);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 30vw;
+        height: 18vw;
+        z-index: -1;
+        @include mb {
+          background-image: url();
+          transform: translate(-8vw, -23.5vw);
+          width: 74vw;
+          height: 41vw;
+        }
+      }
+      position: absolute;
+      left: 9vw;
+      @include mb {
+        top: -53vw;
+        left: 9vw;
+      }
+      p:first-child {
+        margin-bottom: 1vw;
+        padding-left: 1vw;
+        color: rgb(255, 255, 255);
+        font-size: 2vw;
+        letter-spacing: .5vw;
+        @include mb {
+          font-size: 5vw;
+        }
+      }
+      p:nth-child(2) {
+        color: #a40000;
+        font-size: 2vw;
+        margin-bottom: 0.7vw;
+        letter-spacing: 0.1vw;
+        @include mb {
+          margin-top: 3vw;
+          font-size: 4vw;
+          
+        }
+      }
+      p:nth-child(3) {
+        color: #000;
+        font-size: 1.43vw;
+        letter-spacing: 0.1vw;
+        @include mb {
+          margin-top: 2vw;
+          font-size: 3vw;
+          span {
+            display: block;
+            margin-top: 1vw;
+          }
+
+        }
+      }
+      .deco-flare-2 {
+        width: 1.5vw;
+        height: 14vw;
+        transform: rotate(-90deg);
+        filter: blur(0.2vw);
+        top: -25vw;
+        left: 57vw;
+        position: absolute;
+        @include mb {
+          width: 2.5vw;
+          height: 14vw;
+          top: -11vw;
+          left: 26.7vw;
+        }
+        &::before{
+          content: "";
+          width: 100%;
+          height: 100%;
+          display: block;
+          background: radial-gradient(ellipse, #fff, rgba(255, 255, 255, 0) 80%);
+          animation: deco_flare_shine 1s infinite alternate;
+          animation-delay: .5s;
+        }
+        @keyframes deco_flare_shine {
+          0% {
+            opacity: 0.5;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .txt-r {
+      position: absolute;
+      width: 30vw;
+      top: 1vw;
+      z-index: 1;
+      &::after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/LLLframe-large.png);
+        transform: translate(-10.8vw, -26.3vw);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40vw;
+        height: 40vw;
+        z-index: -1;
+        @include mb {
+          display: none;
+        }
+      }
+      .txt {
+        @include mb {
+          position: relative;
+          // top: -1vw;
+          width: 61vw;
+        }
+      }
+      position: absolute;
+      left: 45vw;
+      @include mb {
+        margin-top: 8vw;
+        left: 26vw;
+        top: -6vw;
+      }
+      p:first-child {
+        margin-bottom: 1vw;
+        padding-left: 1vw;
+        color: rgb(255, 255, 255);
+        font-size: 2.12vw;
+        letter-spacing: .5vw;
+        @include mb {
+          margin-bottom: 3vw;
+          font-size: 5vw;
+        }
+      }
+      p:nth-child(2) {
+        color: #a40000;
+        font-size: 1.86vw;
+        margin-bottom: 0.7vw;
+        letter-spacing: 0.1vw;
+        @include mb {
+          margin-bottom: 2vw;
+          font-size: 4vw;
+        }
+      }
+      p:nth-child(3) {
+        color: #000;
+        font-size: 1.55vw;
+        letter-spacing: 0.1vw;
+        @include mb {
+          font-size: 3vw;
+        }
+      }
+      .deco-flare-2 {
+        width: 3vw;
+        height: 8vw;
+        transform: rotate(-90deg);
+        filter: blur(0.5vw);
+        top: -5vw;
+        left: -36.1vw;
+        position: absolute;
+        @include mb {
+          width: 2.5vw;
+          height: 24vw;
+          top: -42.3vw;
+          left: 41.7vw;
+        }
+        &::before{
+          content: "";
+          width: 100%;
+          height: 100%;
+          display: block;
+          background: radial-gradient(ellipse, #fff, rgba(255, 255, 255, 0) 80%);
+          animation: deco_flare_shine 1s infinite alternate;
+        }
+        @keyframes deco_flare_shine {
+          0% {
+            opacity: 0.5;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    
+  }
+}

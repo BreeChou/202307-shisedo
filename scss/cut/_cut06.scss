@@ -1,0 +1,447 @@
+.cut6 {
+  background-image: url(../images/index_bgjpg_06.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95.8vw;
+  // opacity: .8;
+  padding-top: 2vw;
+  @include mb {
+    padding-top: 6vw;
+    background-image: url(../images/index_mbv1_07.jpg);
+    height: 140vw;
+  }
+  position: relative;
+  
+  .h2 {
+    text-align: center;
+    p {
+      position: relative;
+      font-size: 3.5vw;
+      letter-spacing: .3vw;
+      line-height: .9;
+      &:last-child {
+      }
+      @include mb {
+        font-size: 6.5vw;
+      }
+    }
+    .numColor_s {
+      width: 1em;
+      margin-left: -1.2vw;
+      display: inline-block;
+      color: transparent;
+      vertical-align: middle;
+      background: $gradient-TR;
+      background-clip: text;
+      font-size: 7vw;
+      transform: skew(-10deg);
+      vertical-align: -8%;
+      @include mb {
+        font-size: 10vw;
+        margin-left: -2vw;
+      }
+    }
+    .numColor{
+      width: 1em;
+      margin-right: -1.2vw;
+      margin-left: -1.5vw;
+      display: inline-block;
+      color: transparent;
+      vertical-align: middle;
+      background: $gradient-TR;
+      background-clip: text;
+      vertical-align: -8%;
+      font-size: 8vw;
+      transform: skew(-10deg);
+      @include mb {
+        font-size: 12vw;
+        margin-left: -1vw;
+      }
+    }
+    sub {
+      position: absolute;
+      top: 14.4%;
+      left: 42.3%;
+      color: $red;
+      margin-right: -1.2vw;
+      margin-left: -.8vw;
+      font-size: 1vw;
+      @include mb {
+        vertical-align: 234%;
+        left: 36%;
+        top: 1.5vw;
+        font-size: 3vw;
+      }
+    }
+  }
+  .bg-benefit-pd-piece {
+    background: url(../images/bg-benefit-pd-piece.png);
+    background-size: 100%;
+    width: 16.3vw;
+    height: 15vw;
+    top: 189%;
+    left: 50.7%;
+    position: absolute;
+    z-index: 1;
+    @include mb {
+      width: 17.6vw;
+      height: 15vw;
+      top: 148%;
+      left: 49.8%;
+    }
+  }
+  .pd-2 {
+    position: relative;
+    top: 17vw;
+    left: 20vw;
+    background: #000;
+    &::after {
+    content: '';
+    background-image: url(../images/ps-2.png);
+    position: absolute;
+    background-size: cover;
+    width: 33vw;
+    height: 60vw;
+    }
+    @include mb {
+      position: relative;
+      top: 20vw;
+      left: 21vw;
+      background: #000;
+      &::after {
+        content: '';
+        background-image: url(../images/ps-2.png);
+        position: absolute;
+        background-size: cover;
+        width: 41vw;
+        height: 72vw;
+      }
+    }
+    
+  }
+  .deco-flare-1 {
+    z-index: 1;
+    width: 8.5vw;
+    height: 28vw;
+    transform: rotate(10deg);
+    filter: blur(1vw);
+    top: 53.7vw;
+    left: 56.9vw;
+    position: absolute;
+    @include mb {
+      width: 6.5vw;
+      height: 35vw;
+      top: 83.7vw;
+      left: 60.7vw;
+    }
+    &::before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: radial-gradient(ellipse, #fff, rgba(255, 255, 255, 0) 80%);
+      animation: deco_flare_shine 1s infinite alternate;
+    }
+    @keyframes deco_flare_shine {
+      0% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  .deco-star-3 {
+    top: 78.5%;
+    left: 36.5%;
+    width: 10vw;
+    height: 10vw;
+    z-index: 1;
+    position: absolute;
+    @include mb {
+      width: 9.5vw;
+      height: 9.5vw;
+      top: 104vw;
+      left: 36vw;
+    }
+    &::before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-image: url(../images/icon-light-1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: deco_light 2s linear infinite;
+    }
+    @keyframes deco_light {
+      0% {
+        transform: rotate(0deg) scale(0);
+      }
+      50% {
+        transform: rotate(180deg) scale(1.2);
+      }
+      100% {
+        transform: rotate(360deg) scale(0);
+      }
+    }
+  }
+  .deco-flare-2 {
+    z-index: 1;
+    width: 4.5vw;
+    height: 10vw;
+    transform: rotate(-18deg);
+    filter: blur(1vw);
+    top: 57.7vw;
+    left: 34.9vw;
+    position: absolute;
+    @include mb {
+      width: 3.5vw;
+      height: 14vw;
+      top: 87.7vw;
+      left: 33.7vw;
+    }
+    &::before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: radial-gradient(ellipse, #fff, rgba(255, 255, 255, 0) 80%);
+      animation: deco_flare_shine 1s infinite alternate;
+      animation-delay: .8s;
+    }
+    @keyframes deco_flare_shine {
+      0% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  ul {
+    position: relative;
+    right: 4vw;
+    @include mb {
+      margin-top: 3vw;
+    }
+    p {
+      font-size: 4vw;
+      line-height: 1.2;
+      font-weight: 200;
+    }
+    .b-1 {
+      width: 19vw;
+      height: 19vw;
+      position: absolute;
+      animation: benefit_li_float 1.5s ease-in-out infinite alternate;
+      div {
+        bottom: -243%;
+        transform: scale(0.8);
+        right: -296%;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, #fff, rgba(255, 255, 255, 0) 70%), url(../images/icon-benefit-ball.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        box-shadow: 0 0 3vw rgba(255, 255, 255, 0.5);
+        position: absolute;
+        @include mb {
+          transform: scale(1.1);
+          bottom: -350%;
+          right: -331%;
+        }
+        p {
+          padding-top: 4vw;
+          text-align: center;
+        }
+      }
+    }
+    .b-2 {
+      
+      width: 19vw;
+      height: 19vw;
+      position: absolute;
+      animation: benefit_li_float 1.5s ease-in-out infinite alternate;
+      animation-delay: -1.5s;
+      div {
+        bottom: -135%;
+        transform: scale(.9);
+        right: -311%;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, #fff, rgba(255, 255, 255, 0) 70%), url(../images/icon-benefit-ball.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        box-shadow: 0 0 3vw rgba(255, 255, 255, 0.5);
+        position: absolute;
+        @include mb {
+          bottom: -211%;
+          transform: scale(1.2);
+          right: -348%;
+        }
+        p {
+          padding-top: 4vw;
+          text-align: center;
+        }
+      }
+    }
+    .b-3 {
+      width: 19vw;
+      height: 19vw;
+      position: absolute;
+      animation: benefit_li_float 1.5s ease-in-out infinite alternate;
+      div {
+        &::after {
+          content: '';
+          position: absolute;
+          width: 140%;
+          height: 140%;
+          background: radial-gradient(circle, #fff, rgba(255, 255, 255, 0) 70%), url(../images/icon-benefit-ball-light.png);
+          background-repeat: no-repeat;
+          background-size: 100%;
+          top: -1vw;
+          left: -3.5vw;
+          z-index: -1;
+        }
+        bottom: -20%;
+        transform: scale(1.1);
+        right: -252%;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, #fff, rgba(255, 255, 255, 0) 70%), url(/images/icon-benefit-ball.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        box-shadow: 0 0 3vw rgba(255, 255, 255, 0.5);
+        position: absolute;
+        @include mb {
+          transform: scale(1.5);
+          bottom: -28%;
+          right: -300%;
+        }
+        p {
+          color: #b5071f ;
+          padding-top: 4vw;
+          font-weight: 400;
+          text-align: center;
+        }
+        
+      }
+    }
+    .b-4 {
+      
+      width: 19vw;
+      height: 19vw;
+      position: absolute;
+      animation: benefit_li_float 1.5s ease-in-out infinite alternate;
+      animation-delay: -1.5s;
+      div {
+        bottom: -25%;
+        transform: scale(0.94);
+        right: -93%;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, #fff, rgba(255, 255, 255, 0) 70%), url(../images/icon-benefit-ball.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        box-shadow: 0 0 3vw rgba(255, 255, 255, 0.5);
+        position: absolute;
+        @include mb {
+          transform: scale(1.2);
+          bottom: -45%;
+          right: -106%;
+        }
+        p {
+          padding-top: 4vw;
+          text-align: center;
+        }
+      }
+    }
+    .b-5 {
+      width: 19vw;
+      height: 19vw;
+      position: absolute;
+      animation: benefit_li_float 1.5s ease-in-out infinite alternate;
+      div {
+        bottom: -129%;
+        transform: scale(0.9);
+        left: 16%;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, #fff, rgba(255, 255, 255, 0) 70%), url(../images/icon-benefit-ball.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        box-shadow: 0 0 3vw rgba(255, 255, 255, 0.5);
+        position: absolute;
+        @include mb {
+          bottom: -162%;
+          transform: scale(1.2);
+          left: 19%;
+        }
+        p {
+          padding-top: 4vw;
+          text-align: center;
+        }
+      }
+    }
+    
+    .b-6 {
+      
+      width: 19vw;
+      height: 19vw;
+      position: absolute;
+      animation: benefit_li_float 1.5s ease-in-out infinite alternate;
+      animation-delay: -1.5s;
+      div {
+        bottom: -235%;
+        transform: scale(0.83);
+        left: 25%;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, #fff, rgba(255, 255, 255, 0) 70%), url(../images/icon-benefit-ball.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        box-shadow: 0 0 3vw rgba(255, 255, 255, 0.5);
+        position: absolute;
+        @include mb {
+          bottom: -308%;
+          transform: scale(1.1);
+          left: 32%;
+        }
+        p {
+          padding-top: 4vw;
+          text-align: center;
+        }
+      }
+    }
+    @keyframes benefit_li_float {
+      0% {
+				transform: translateY(-5%)
+      }
+      100% {
+        transform: translateY(5%)
+      }
+    }
+    
+  }
+  .notion {
+    position: relative;
+    top: 67vw;
+    line-height: 2;
+    color: #fff;
+    width: 40%;
+    @include mb {
+      width: 81vw;
+      top: 96vw;
+      left: 0vw;
+      right: 21vw;
+      text-align: center;
+    }
+  }
+}

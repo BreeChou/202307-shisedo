@@ -1,0 +1,265 @@
+.cut5 {
+  background-image: url(../images/index_bgjpg_05.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65.8vw;
+  @include mb {
+    padding-top: 4vw;
+    background-image: url(../images/index_mbv1_06.jpg);
+    height: 113.5vw;
+  }
+  .title {
+    letter-spacing: .4vw;
+    width: 50%;
+    @include mb {
+      text-align: center;
+      width: 100%;
+    }
+    p:first-child {
+      font-size: 3.5vw;
+      color: transparent;
+      vertical-align: middle;
+      background: $gradient-TR;
+      background-clip: text;
+      @include mb {
+        font-size: 7.5vw;
+        margin-bottom: 2vw;
+      }
+      
+      span {
+        font-size: 6.5vw;
+        vertical-align: -3%;
+        font-style: italic;
+        @include mb {
+          font-size: 13vw;
+          vertical-align: -5%;
+        }
+      }
+    }
+    p:nth-child(2) {
+      margin: 1.5vw 0;
+      display: inline-block;
+      border: 1px solid #a40000;
+      border-width: 1px 0 1px 0;
+      line-height: 3.5vw;
+      font-size: 2vw;
+      padding: .5vw 0;
+      @include mb {
+        border-width: 1px 0px;
+        padding: 2vw 25px;
+        font-size: 4.5vw;
+        line-height: 6vw;
+      }
+      span {
+        padding-left: 1vw;
+        display: block;
+        @include mb {
+          display: inline;
+          
+        }
+      }
+    }
+    p:last-child {
+      line-height: 2vw;
+      font-size: 1.5vw;
+      @include mb {
+        width: 44%;
+        margin-top: 3vw;
+        text-align: left;
+        font-size: 3vw;
+        line-height: 4.5vw;
+      }
+      span {
+        display: block;
+        @include mb {
+          display: inline;
+        }
+      }
+    }
+  }
+  
+  .info {
+    width: 100%;
+    position: relative;
+    margin-top: 3vw;
+    @include mb {
+      margin-top: 10vw;
+    }
+    .deco-flare-2 {
+      width: 4.5vw;
+      height: 23vw;
+      filter: blur(0.2vw);
+      top: 4.7vw;
+      left: 33.9vw;
+      z-index: 1;
+      position: absolute;
+      @include mb {
+        width: 4.5vw;
+        height: 29vw;
+        top: 8vw;
+        left: 36.7vw;
+      }
+      &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: radial-gradient(ellipse, #fff, rgba(255, 255, 255, 0) 60%);
+        animation: deco_flare_shine 1s infinite alternate;
+        animation-delay: .5s;
+      }
+      @keyframes deco_flare_shine {
+        0% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+    .deco-star-2 {
+      top: 32.5%;
+      left: 44.5%;
+      width: 5vw;
+      height: 5vw;
+      z-index: 1;
+      position: absolute;
+      @include mb {
+        width: 10vw;
+        height: 10vw;
+        top: 7.7vw;
+        left: 34.7vw;
+      }
+      &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-image: url(../images/icon-light-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: deco_light 2s linear infinite;
+      }
+      @keyframes deco_light {
+        0% {
+          transform: rotate(0deg) scale(0);
+        }
+        50% {
+          transform: rotate(180deg) scale(1.2);
+        }
+        100% {
+          transform: rotate(360deg) scale(0);
+        }
+      }
+    }
+    .deco-star-3 {
+      top: 82.5%;
+      left: 61.5%;
+      width: 5vw;
+      height: 5vw;
+      z-index: 1;
+      position: absolute;
+      @include mb {
+        width: 5.5vw;
+        height: 5.5vw;
+        top: 38vw;
+        left: 51vw;
+      }
+      &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-image: url(../images/icon-light-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: deco_light 2s linear infinite;
+        animation-delay: .8s;
+      }
+      @keyframes deco_light {
+        0% {
+          transform: rotate(0deg) scale(0);
+        }
+        50% {
+          transform: rotate(180deg) scale(1.2);
+        }
+        100% {
+          transform: rotate(360deg) scale(0);
+        }
+      }
+    }
+    .pds {
+      height: 38vw;
+      width: 100%;
+      &::after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/pdandFrame.png);
+        top: -14vw;
+        left: 4vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 50vw;
+        width: 100%; 
+        @include mb {
+          background-image: url(../images/pdandFrame_mb.png);
+          width: 86.5vw;
+          height: 66vw;
+          top: -22vw;
+          left: -2.5vw;
+        }
+      } 
+    }
+    .t-l {
+      z-index: 1;
+      position: absolute;
+      top: 18.5vw;
+      left: 6vw;
+      display: inline-block;
+      @include mb {
+        top: 17vw;
+        left: 1vw;
+      }
+    }
+    .t-r {
+      z-index: 1;
+      position: absolute;
+      top: 15.1vw;
+      left: 50vw;
+      display: inline-block;
+      @include mb {
+        top: 14vw;
+        left: 56vw;
+      }
+    }
+    .txt {
+      p {
+        letter-spacing: .3vw;
+        &:nth-child(1) {
+          padding-left: 1vw;
+          font-size: 1.5vw;
+          margin-bottom: 1vw;
+          color: #ffffff;
+          @include mb {
+            margin-bottom: 2.5vw;
+            font-size: 3vw;
+          }
+        }
+        &:nth-child(2) {
+          font-size: 1.5vw;
+          margin-bottom: .5vw;
+          @include mb {
+            font-size: 2.5vw;
+          }
+        }
+        &:nth-child(3) {
+          color: #a40000;
+          font-size: 2vw;
+          @include mb {
+            font-size: 3vw;
+          }
+        }
+      }
+    }
+  }
+}

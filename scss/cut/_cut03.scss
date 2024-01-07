@@ -1,0 +1,335 @@
+ .cut3 {
+  background-image: url(../images/index_bgjpg_03_03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 97vw;
+  padding-top: 5vw;
+  // opacity: .8;
+  @include mb {
+    background-image: url(../images/index_mbv1_03.jpg);
+    height: 142vw;
+    padding-top: 2vw;
+  }
+  color: #ffffff;
+  position: relative;
+  @include mb {
+  }
+  h2 {
+    font-size: 3.5vw;
+    text-align: center;
+    text-shadow:0px 0px 5px rgb(255, 87, 132);
+    color: #ffffff;
+    @include mb {
+      font-size: 7vw;
+    }
+    
+    &::before {
+      content: '';
+      left: 29vw;
+      position: absolute;
+      transform: translate(-1vw, 0.5vw);
+      background-image: url(../images/shine-L.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 20vw;
+      height: 2vw;
+      @include mb {
+        width: 30vw;
+        height: 4vw;
+        left: 26vw;
+        transform: translate(-21vw, 2.3vw);
+      }
+    }
+    &::after{
+      content: '';
+      left: 22vw;
+      position: absolute;
+      transform: translate(37vw, 0.5vw);
+      background-image: url(../images/shine-R.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 20vw;
+      height: 2vw;
+      @include mb {
+        width: 30vw;
+        height: 4vw;
+        left: 91vw;
+        transform: translate(-22vw, 2.5vw);
+      }
+    }
+  }
+  .tag-g {
+    
+    .deco-star-2 {
+      top: 37.5%;
+      left: 8.5%;
+      width: 9vw;
+      height: 9vw;
+      z-index: 1;
+      position: absolute;
+      @include mb {
+        width: 10vw;
+        height: 10vw;
+        top: 26.7vw;
+        left: 39.7vw;
+      }
+      &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-image: url(../images/icon-light-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: deco_light 2s linear infinite;
+      }
+      @keyframes deco_light {
+        0% {
+          transform: rotate(0deg) scale(0);
+        }
+        50% {
+          transform: rotate(180deg) scale(1.2);
+        }
+        100% {
+          transform: rotate(360deg) scale(0);
+        }
+      }
+    }
+    .deco-star-1 {
+      top: 75.5%;
+      left: 43.5%;
+      width: 4vw;
+      height: 4vw;
+      z-index: 1;
+      position: absolute;
+      @include mb {
+        width: 6vw;
+        height: 6vw;
+        top: 109.7vw;
+        left: 20.7vw;
+      }
+      &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-image: url(../images/icon-light-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: deco_light 2s linear infinite;
+      }
+      @keyframes deco_light {
+        0% {
+          transform: rotate(0deg) scale(0);
+        }
+        50% {
+          transform: rotate(180deg) scale(1.2);
+        }
+        100% {
+          transform: rotate(360deg) scale(0);
+        }
+      }
+    }
+    .tag1 {
+      .info {
+        position: absolute;
+        left: 75vw;
+        top: 18.3vw;
+        @include mb {
+          left: 79vw;
+          top: 26vw;
+          transform: scale(1.4);
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          transform: translate(-3.5vw, -6vw);
+          background-image: url(../images/tech-circle.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 18vw;
+          height: 18vw;
+        }
+        p {
+          font-size: 5.5vw;
+        }
+       
+      }
+      .txt1 {
+        top: 26vw;
+        right: 7.5vw;
+        position: absolute;
+        @include mb {
+          top: 38vw;
+          right: 5vw;
+        }
+        .line {
+          width: 35.5vw;
+          transform: translate(-8vw, 0vw);
+          @include mb {
+            width: 45.5vw;
+            transform: translate(-12vw, -1vw);
+          }
+        }
+      }
+      
+    }
+    .tag2 {
+      .info {
+        position: absolute;
+        left: 78vw;
+        top: 43.3vw;
+        @include mb {
+          left: 82vw;
+          top: 63.3vw;
+          transform: scale(1.4);
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          transform: translate(-3vw, -3vw);
+          background-image: url(../images/tech-circle.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 11.5vw;
+          height: 11.5vw;
+        }
+        p {
+          font-size: 5.5vw;
+        }
+        
+      }
+      .txt2 {
+        top: 47vw;
+        right: 21.5vw;
+        position: absolute;
+        @include mb {
+          top: 68vw;
+          right: 13vw;
+        }
+        .line {
+          width: 13.5vw;
+          transform: translate(-3vw, 0vw);
+          @include mb {
+            width: 20.5vw;
+            transform: translate(-4vw, -1vw);
+          }
+          
+        }
+      }
+    }
+    .tag3 {
+      .info {
+        position: absolute;
+        left: 78vw;
+        top: 62.3vw;
+        @include mb {
+          left: 82vw;
+          top: 94.3vw;
+          transform: scale(1.4);
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          transform: translate(-3vw, -3vw);
+          background-image: url(../images/tech-circle.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 11.5vw;
+          height: 11.5vw;
+        }
+        p {
+          font-size: 5.5vw;
+        }
+      }
+      .txt3 {
+        top: 63vw;
+        right: 17.5vw;
+        position: absolute;
+        @include mb {
+          top: 95vw;
+          right: 13.5vw;
+        }
+        .line {
+          width: 25.5vw;
+          transform: translate(-7vw, -1vw);
+          @include mb {
+            width: 34.5vw;
+            transform: translate(-12vw, -1vw);
+          }
+        }
+      }
+    }
+    .tag4 {
+      .info {
+        position: absolute;
+        left: 78vw;
+        top: 77.3vw;
+        @include mb {
+          left: 82vw;
+          top: 120.3vw;
+          transform: scale(1.4);
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          transform: translate(-3vw, -3vw);
+          background-image: url(../images/tech-circle.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 11.5vw;
+          height: 11.5vw;
+        }
+        p {
+          font-size: 5.5vw;
+        }
+      }
+      .txt4 {
+        top: 79vw;
+        right: 6.5vw;
+        position: absolute;
+        @include mb {
+          top: 119vw;
+          right: 3.5vw;
+        }
+        .line {
+          width: 36.5vw;
+          transform: translate(-21vw, -1vw);
+          @include mb {
+            width: 57.5vw;
+            transform: translate(-19vw, -1vw);
+          }
+        }
+      }
+    }
+    // 共用css
+    .txt {
+      color: #ffffff;
+      p {
+        font-size: 1.55vw;
+        @include mb {
+          margin-top: -2vw;
+          font-size: 3vw;
+        }
+        &:nth-child(1) {
+          margin-bottom: .3vw;
+          font-size: 3vw;
+          @include mb {
+            margin-bottom: .3vw;
+            font-size: 5vw;
+          }
+          
+        }
+        &:last-child {
+          margin-top: 1.5vw;
+          font-size: 1.55vw;
+          font-weight: 200;
+          @include mb {
+            font-size: 3vw;
+          }
+        }
+      }
+    }
+    
+  }
+}  

@@ -1,0 +1,27 @@
+.videobox {
+  padding-top: 1vw;
+  background-image: url(../images/index_bgjpg_02.jpg);
+  // opacity: .7;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 49vw;
+  @include mb {
+    background-image: url(../images/index_mbv1_02.jpg);
+    padding-top: 4vw;
+    height: 58vw;
+  }
+  .box {
+    position: relative;
+    padding-bottom:56.25%;
+    width:100%;
+    height:0;
+    iframe {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    }
+  }
+  
+}
